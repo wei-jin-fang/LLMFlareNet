@@ -69,7 +69,7 @@ We also make a solar flare forecasting system (www.justspaceweather.cn) ,(等待
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/LLMFlareNet.git
+git clone https://github.com/wei-jin-fang/LLMFlareNet.git
 cd LLMFlareNet
 
 # Create conda environment
@@ -95,6 +95,9 @@ pre_train_model/bert/
 ```
 
 ### 2.Inference
+
+Now, we have uploaded the pre-trained weight in [huggingface](https://huggingface.co/Qduck/LLMFlareNet)
+
 Data preparation, follow the format below
 ```
 random_2d_list = [[random.random() for _ in range(10)] for _ in range(40)]
@@ -285,7 +288,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 # Contact
 For questions, issues, or collaborations:
 
-- **GitHub Issues**: [https://github.com/yourusername/LLM_FlareNet/issues](https://github.com/yourusername/LLM_FlareNet/issues)
+- **GitHub Issues**: [https://github.com/yourusername/LLM_FlareNet/issues](https://github.com/wei-jin-fang/LLMFlareNet/issues)
 
 
 ---

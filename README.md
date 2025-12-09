@@ -280,7 +280,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 # Contact
 For questions, issues, or collaborations:
 
-- **GitHub Issues**: [https://github.com/yourusername/LLM_FlareNet/issues](https://github.com/wei-jin-fang/LLMFlareNet/issues)
+- **GitHub Issues**: [https://github.com/wei-jin-fang/LLM_FlareNet/issues](https://github.com/wei-jin-fang/LLMFlareNet/issues)
 
 
 ---

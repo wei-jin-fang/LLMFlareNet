@@ -34,7 +34,7 @@
 
   ![model](./assert/model.png)
 
-We also make a solar flare forecasting system (www.justspaceweather.cn) ,(等待替换，假设文中表示)
+We also make a solar flare forecasting system (www.justspaceweather.cn) ,
 
 ![result](./assert/3function.png)
 
@@ -53,7 +53,7 @@ We also make a solar flare forecasting system (www.justspaceweather.cn) ,(等待
 
 ---
 
-**Last Updated**: 2025-11-8
+**Last Updated**: 2025-12-9
 
 **Version**: 1.0.0
 
@@ -121,7 +121,7 @@ We will synchronize and resolve these issues as soon as possible in the future. 
 
 ```
 ├── Transformer.py                     # Bert——>Transformer method
-├── Onefitall_16.py                    # TimeLLMFlareNet
+├── Onefitall_16.py                    # LLMFlareNet
 ├── Onefitall_18.py                    # w/o BERT layer method
 ├── Onefitall_26.py                    # Bert(Random Parameters) method
 ```
@@ -217,7 +217,7 @@ LLM_FlareNet/
 ```
 ## Train Modes
 
-follow the chapter [Quick Start](#quick-start).  By using the parameter details mentioned in the paper, you can obtain the weights of each model . Manually organize the result.xlsx of each model. You can get Table X(等待替换) of the paper.
+follow the chapter [Quick Start](#quick-start).  By using the parameter details mentioned in the paper, you can obtain the weights of each model . Manually organize the result.xlsx of each model. You can get Tables 7-8 of the paper.
 
 ## Evaluation Modes
 
@@ -229,7 +229,7 @@ follow the chapter [Quick Start](#quick-start).  By using the parameter details 
 
 Run `evalation/fillter_10CV/1data_fillter.py`. Then you can get the 10-Fold filtered CV
 
-Run `evalation/fillter_10CV/2main.py`. Then you can get the result, which(等待替换，对应论文中表)
+Run `evalation/fillter_10CV/2main.py`. Then you can get the result, as shown in Tables 7–8.
 
 ### Mode 2: Daily Mode
 
@@ -240,23 +240,23 @@ Run `evalation/daily_mode/2main.py`. Then you can get  many result flodes.
  ├── Onefitall_16_SR_*/             # Scientific Reports comparison
 ```
 
-Run `calculation_and_draw/draw_daily_mode_comparsion.py`. Then you can get the plot, which (等待替换，与论文中图x。图x一致)
+Run `calculation_and_draw/draw_daily_mode_comparsion.py`. Then you can get the plot, as shown in Figures 9-10
 
 ## Feature Importance Analysis
 
 ### RFE
 
-Use the same model parameters as during training, modify the RFE_input_name in the code, and then run `feature_importance/RFE/train_RFE.py`. You can obtain the same output materials as the training code. Manually organize the result.xlsx of each RFE experiment. You can get Table X(等待替换) of the paper.
+Use the same model parameters as during training, modify the RFE_input_name in the code, and then run `feature_importance/RFE/train_RFE.py`. You can obtain the same output materials as the training code. Manually organize the result.xlsx of each RFE experiment. You can get Table 9 of the paper.
 
 ### SHAP_feature_important
 
-Specify the parameter `dot `or `dot ` in the code and run `feature_importance/SHAP_bar_and_dot/SHAP_bar_dot.py `to generate the SHAP bar plot and bee swarm plot, respectively, corresponding to (等待替换)Figure X and Figure Y in the paper.
+Specify the parameter `dot `or `dot ` in the code and run `feature_importance/SHAP_bar_and_dot/SHAP_bar_dot.py `to generate the SHAP bar plot and bee swarm plot, respectively, corresponding to Figure 3 and Figure 4 in the paper.
 
 ### SHAP_sample
 
-Run `feature_importance/SHAP_sample/SHAP_force_all_sample_combine_html.py` to generate the SHAP global force plot for all samples. Specify the active region to obtain Figure X(等待替换) in the paper.
+Run `feature_importance/SHAP_sample/SHAP_force_all_sample_combine_html.py` to generate the SHAP global force plot for all samples. Specify the active region to obtain Figure 5(a) and Figure 6(a) in the paper.
 
-Run` feature_importance/SHAP_sample/SHAP_force_single_sample_plot.py` to generate the SHAP force plot for all time steps of all samples. Specify the active region and time step to obtain Figure X(等待替换) in the paper.
+Run` feature_importance/SHAP_sample/SHAP_force_single_sample_plot.py` to generate the SHAP force plot for all time steps of all samples. Specify the active region and time step to obtain Figure 5(b) and Figure 6(b) in the paper.
 
 # Citation
 

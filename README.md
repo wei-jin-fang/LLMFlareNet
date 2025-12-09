@@ -161,23 +161,15 @@ LLM_FlareNet/
 │       ├── vocab.txt                      # Vocabulary file
 │       └── tokenizer*.json                # Tokenizer configs
 │
-├── scripts/                               # Data processing utilities  （等待替换，只打算放四个csv链接到网页到时候给别人下载）
+├── scripts/                               # Data processing utilities  
 │   └── get_daily_data/                    # Real-time forecasting pipeline
-│       ├── 0get_ARs_and_10data.py         # Download AR data from NOAA
-│       ├── 1fillter_data_inference.py     # Filter & normalize data
-│       ├── 2get_Event_by_today_datetime.py # Extract event data
-│       ├── 3insert_label_and_new_noaaid.py # Update labels
-│       ├── csv_util.py                    # CSV operations
-│       ├── process_util.py                # Data processing utilities
-│       ├── pymysql_util.py                # Database operations
-│       ├── feishu_bot.py                  # Notification bot
 │       ├── ar_flare_prediction.csv        # AR predictions (555KB)
 │       ├── result_forecast.csv            # Model forecast results
 │       ├── Eventdata.csv                  # Historical events (1.6MB)
 │       └── sharp_data_ten_feature.csv     # SHARP magnetic features
 │
 ├── evalation/                             # Evaluation scripts & results
-│   ├── daily_mode/                        # Daily forecasting evaluation （等待替换，里面还有仅多的，最后删掉
+│   ├── daily_mode/                        # Daily forecasting evaluation （
 │   │   ├── 2main.py                       # Main evaluation script
 │   │   ├── split_result_csvs/             # Per-model predictions
 │   │   ├── Onefitall_16_CCMC_*/           # CCMC comparison
@@ -185,7 +177,7 @@ LLM_FlareNet/
 │   │   └── compare_data/                  # Benchmark datasets
 │   │       ├── ccmc_waitcompare.csv       # CCMC reference data
 │   │       └── sc_waitcompare.csv         # SR reference data
-│   ├── daily_all_data_mode/               # Full dataset evaluation  （等待替换，论文没有后续删掉
+│   ├── daily_all_data_mode/               # Full dataset evaluation  
 │   │   └── 2main.py
 │   ├── fillter_10CV/                      # Filtered 10-CV analysis
 │   │   └── 1data_fillter.py
